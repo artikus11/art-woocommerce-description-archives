@@ -124,11 +124,6 @@ class Art_Woo_Desc_Loop {
 		 */
 		require_once AWOOD_PLUGIN_DIR . 'includes/class-awood-frontend.php';
 
-		/**
-		 * Template functions
-		 */
-		//require_once AWOOD_PLUGIN_DIR . 'includes/awooc-template-functions.php';
-
 		// Load hooks
 /*		$this->hooks();
 

@@ -8,6 +8,13 @@ php:
 script:
 - echo 'Tested'
 before_deploy:
-      - git config --local user.name "artikus11"
-      - git config --local user.email "artikus.sol@gmail.ru"
-      - git tag "1.8.5"
+- git config --local user.name "artikus11"
+- git config --local user.email "artikus.sol@gmail.ru"
+- git tag "1.0.1"
+deploy:
+  provider: releases
+  api_key:
+    secure: WUhMnIMo/aUYpIHJu2YB0eyAwBJRB7aFh0AhGKTMUhyKO4mzVVTjxJtwHniEnVLq6TeYSK5O0h2WYonGZ7HOBBiZd75HCpSDTbzfOHEh/gbSXp+0JenaQkD5XvIewrhv6mN1NcOpglJfD2igHjKgg/1RQfR0kZOye0pb1259RtjaOIYWMqmaEJ7eprgZmvu9j9fzWYQEHUDF2syMbgg1RI4vnM/ImfSjwuQPfi+sPYmVGullFKcPYAFpx+o2KBHTBi3YcqaoYdj4EU1jA1GuGEi1i0NJsOWciNgXxX15KDKmRt2e4tUKsGHgTv9Y9EklIisTlr9KMP5KBiLYwQw071sMxJxo2AALcSW/jEuCEEQ2dT+Hy9ws9sWuZNu2hm23+SQwaKFAunZbhoI5x7HkIicNMYFtghSvjGFeBw0xLzQXQeiGT13PCHYyw4VQvxkF/EA3/xtpezwbzSuLYvzSvSKDqMw6biTGwxHVn1O20UX1QcoztKS+Ha4vDzeSvNlmyaf7iSSLqtuHSBJdczZxLtZgqpC87I77dT242+3/lKv89q3vHQ0shq1gPnmY6wo2+ILfPZ6FYQPpr2W633ztAAOXoPEOMLzefymjxhQ8bp2BWe+WZFDSv70hnEBV09Aa+Z/6gle+ZCBeGngTZqAuxmER1cf49SynDIaPcPzmlB4=
+  file: latest.zip
+  on:
+    repo: artikus11/art-woo-desc-loop
