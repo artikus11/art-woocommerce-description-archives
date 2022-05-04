@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Art WooCommerce Description Loop
+ * Plugin Name: Art WooCommerce Description Archives
  * Plugin URI: #
- * Text Domain: art-woocommerce-description-loop
+ * Text Domain: art-woocommerce-description-archives
  * Domain Path: /languages
  * Description: Плагин WooCommerce для вывода описания на страницах архивов
  * Version: 1.0.0
